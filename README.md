@@ -1,6 +1,9 @@
 # Moviebuff
 A React application using `react hooks`, `react-router`, `react-redux`, `redux-saga`, `Rest API` and `web storage`.
 
+## Live Demo
+First of all, check out the [live demo](https://moviebuff-react.firebaseapp.com/)
+
 ## Features
 - Search for a movie title
 - Create a favorite list
@@ -32,6 +35,3 @@ Go to this address and enjoy the app!
 ```
 http://localhost:3000/
 ```
-
-## Live Demo
-Coming soon..
