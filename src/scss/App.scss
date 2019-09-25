@@ -1,0 +1,157 @@
+//imports
+@import url('https://fonts.googleapis.com/css?family=Anton|Fugaz+One|Roboto+Slab|Saira+Stencil+One&display=swap');
+//Global
+body {
+  background: #039BE5;
+  margin:0;
+}
+nav {
+  text-align: center;
+  background: #02557E;
+  padding: 1rem;
+  margin-bottom: 3rem;
+  ul {
+    padding: 0;
+    margin: 0;
+    li {
+      display: inline;
+      color: #fff;
+      padding: 1rem;
+      font-size: 2rem;
+      &:not(:last-child)::after {
+        content: "/";
+        margin-left: 2rem;
+      }
+      a {
+        text-decoration: none;
+        font-family: 'Anton', sans-serif;
+        color: #FBE59C;
+        transition: color 0.3s;
+        &.active {
+          color: #ffe807;
+          font-size: 2.1rem;
+        }
+        &:not(.active):hover {
+          color: #DDC36B;
+        }
+      }
+    }
+  }
+}
+
+.no-selection {
+  -webkit-user-select: none; /* Safari 3.1+ */
+  -moz-user-select: none; /* Firefox 2+ */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none; /* Standard syntax */
+}
+
+.fa-star {
+  color: #ffd702;
+}
+i[class*="fa-eye"] {
+  color: #e8cb4f;
+}
+//Container
+.container {
+  .search-container {
+    text-align: center;
+    input {
+      width: 40%;
+      padding:1rem;
+      border:none;
+      border-radius: 10px;
+      font-size: 1.2rem;
+      font-family: 'Roboto Slab', serif;
+    }
+    button {
+      display: block;
+      margin: 1rem auto;
+      border: 2px solid white;
+      padding: 0.9rem 3rem;
+      background: #db1f64;
+      color: #fff;
+      font-size: 1.2rem;
+      border-radius: 8px;
+      font-family: 'Fugaz One', cursive;
+      cursor: pointer;
+      &:hover {
+        background: #b91954;
+      }
+    }
+  }
+  .table-container {
+    text-align: center;
+    table {
+      margin: 0 auto;
+      width: 40%;
+      text-align: center;
+    }
+    table, td {
+      border-collapse: collapse;
+      border: 1px solid #c4c4c4;
+      font-family: 'Roboto Slab', serif;
+    }
+    th {
+      background-color: #260046;
+      color: #f5f5f5;
+      letter-spacing: 1px;
+      border: 1px solid #fff;
+    }
+    td, th {
+      padding: 0.7rem;
+      font-size: 1.2rem;
+    }
+    tr {
+      transition: all 0.3s;
+      color: #f5f5f5;
+      &:nth-child(even){
+          background-color: #444;
+      }
+      &:nth-child(odd){
+          background-color: #807d7d;
+      }
+      &:hover {
+        background-color: #0f0f0f;
+        color: #fff;
+      }
+    }
+
+    ul.pagination {
+      li {
+        display: inline;
+        border: 1px solid darkblue;
+        padding: 0.5rem 0.8rem;
+        margin: 0.2rem;
+        background: #fff;
+        font-family: Anton;
+        border-radius: 6px;
+        cursor: pointer;
+        -webkit-user-select: none; /* Safari 3.1+ */
+        -moz-user-select: none; /* Firefox 2+ */
+        -ms-user-select: none; /* IE 10+ */
+        user-select: none; /* Standard syntax */
+        &.active {
+          background:#B91954;
+          color: #fff;
+        }
+        a {
+          text-decoration: none;
+          color: inherit;
+          font-size: 1rem;
+        }
+      }
+    }
+    .icon {
+      font-size: 1.7rem;
+      cursor: pointer;
+    }
+    .no-results {
+      font-family: 'Saira Stencil One', cursive;
+      font-size: 5rem;
+      color: #fff;
+      text-shadow: 0px 0px 20px #050f33, 3px 3px 2px black;
+      margin-top: 10rem;
+    }
+  }
+}
