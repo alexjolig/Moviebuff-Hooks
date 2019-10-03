@@ -84,8 +84,11 @@ i[class*="fa-eye"] {
     text-align: center;
     table {
       margin: 0 auto;
-      width: 40%;
+      width: 80%;
       text-align: center;
+      @media screen and (min-width: 1970px) {
+        width: 50%;
+      }
     }
     table, td {
       border-collapse: collapse;
